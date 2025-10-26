@@ -2,22 +2,7 @@ import csv
 import os
 from django.core.management.base import BaseCommand, CommandError
 from django.conf import settings
-from score_api.models import PeerBenchmark, ComponentWeight
-# Removed NudgeRule import
-
-# --- IMPORTANT ---
-# Place your CSV files in a directory: <project_root>/data/
-# e.g., /wealth_core/data/PeerBenchmarks.csv
-#
-# You will need to create this 'data' directory yourself and place the
-# CSV files (renamed) inside it.
-#
-# Renamed files:
-# "Mohur_WealthScore_Testbed_DYNAMIC_SIM.xlsx - PeerBenchmarks.csv" -> "PeerBenchmarks.csv"
-# "Mohur_WealthScore_Testbed_DYNAMIC_SIM.xlsx - Weights.csv" -> "Weights.csv"
-# "Mohur_WealthScore_Testbed_DYNAMIC_SIM.xlsx - NudgeRules.csv" -> "NudgeRules.csv"
-#
-# ---
+from api.models import PeerBenchmark, ComponentWeight
 
 DATA_DIR = os.path.join(settings.BASE_DIR, 'data')
 
@@ -85,5 +70,5 @@ class Command(BaseCommand):
             ComponentWeight.objects.bulk_create(weights)
         self.stdout.write(self.style.SUCCESS(f'Loaded {len(weights)} component weights.'))
 
-    # Removed load_nudge_rules method
+
 
