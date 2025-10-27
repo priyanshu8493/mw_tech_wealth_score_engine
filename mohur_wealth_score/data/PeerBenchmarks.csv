@@ -1,0 +1,11 @@
+City,Tier,BenchmarkSavingPct,PeerBasePercentile,IncomeLow,IncomeHigh,MeanAdjLow,MeanAdjHigh
+Bengaluru,Tier 1,0.15,0.75,70000,120000,-0.01,0.01
+Mumbai,Tier 1,0.16,0.72,80000,130000,-0.01,0.01
+Delhi,Tier 1,0.14,0.68,70000,110000,-0.01,0.01
+Pune,Tier 2,0.12,0.64,45000,85000,-0.01,0.01
+Nagpur,Tier 2,0.11,0.59,35000,70000,-0.01,0.01
+Kochi,Tier 2,0.12,0.61,40000,75000,-0.01,0.01
+Indore,Tier 2,0.11,0.57,35000,65000,-0.01,0.01
+Lucknow,Tier 2,0.1,0.52,30000,60000,-0.01,0.01
+Guwahati,Tier 3,0.09,0.48,25000,50000,-0.01,0.01
+Mysuru,Tier 3,0.09,0.5,28000,55000,-0.01,0.01

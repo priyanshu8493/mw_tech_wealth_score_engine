@@ -1,1 +1,4 @@
 venv
+wealth_score_engine/mohur_wealth_score/db.sqlite3
+wealth_score_engine/mohur_wealth_score/mohur_wealth_score/__pycache__
+wealth_score_engine/mohur_wealth_score/api/__pycache__
